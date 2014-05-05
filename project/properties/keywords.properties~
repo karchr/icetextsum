@@ -1,0 +1,6 @@
+file=
+out_file=
+language=icelandic
+algorithm=textrank
+
+keyword_file_type=.txt

@@ -1,0 +1,200 @@
+---------------------------------------------
+baseline ROUGE-1 Average_R: 0.61195 (95%-conf.int. 0.56886 - 0.65821)
+baseline ROUGE-1 Average_P: 0.51503 (95%-conf.int. 0.47590 - 0.56056)
+baseline ROUGE-1 Average_F: 0.55577 (95%-conf.int. 0.51821 - 0.59626)
+.............................................
+baseline ROUGE-1 Eval 1.baseline R:0.56633 P:0.38915 F:0.46131
+baseline ROUGE-1 Eval 2.baseline R:0.71247 P:0.54902 F:0.62016
+baseline ROUGE-1 Eval 3.baseline R:0.50654 P:0.43785 F:0.46970
+baseline ROUGE-1 Eval 4.baseline R:0.77470 P:0.68056 F:0.72459
+baseline ROUGE-1 Eval 5.baseline R:0.79560 P:0.47917 F:0.59811
+baseline ROUGE-1 Eval 6.baseline R:0.75419 P:0.74586 F:0.75000
+baseline ROUGE-1 Eval 7.baseline R:0.58710 P:0.65942 F:0.62116
+baseline ROUGE-1 Eval 8.baseline R:0.54225 P:0.54610 F:0.54417
+baseline ROUGE-1 Eval 9.baseline R:0.62903 P:0.60000 F:0.61417
+baseline ROUGE-1 Eval 10.baseline R:0.63666 P:0.45000 F:0.52730
+baseline ROUGE-1 Eval 11.baseline R:0.66276 P:0.53810 F:0.59396
+baseline ROUGE-1 Eval 12.baseline R:0.45840 P:0.36885 F:0.40878
+baseline ROUGE-1 Eval 13.baseline R:0.58769 P:0.52186 F:0.55282
+baseline ROUGE-1 Eval 14.baseline R:0.50373 P:0.43548 F:0.46713
+baseline ROUGE-1 Eval 15.baseline R:0.72403 P:0.45510 F:0.55890
+baseline ROUGE-1 Eval 16.baseline R:0.53199 P:0.48171 F:0.50560
+baseline ROUGE-1 Eval 17.baseline R:0.52174 P:0.47143 F:0.49531
+baseline ROUGE-1 Eval 18.baseline R:0.54150 P:0.51504 F:0.52794
+baseline ROUGE-1 Eval 19.baseline R:0.50000 P:0.48305 F:0.49138
+baseline ROUGE-1 Eval 20.baseline R:0.72156 P:0.59653 F:0.65312
+---------------------------------------------
+baseline ROUGE-2 Average_R: 0.44736 (95%-conf.int. 0.38709 - 0.50847)
+baseline ROUGE-2 Average_P: 0.37788 (95%-conf.int. 0.32359 - 0.43862)
+baseline ROUGE-2 Average_F: 0.40695 (95%-conf.int. 0.35243 - 0.46579)
+.............................................
+baseline ROUGE-2 Eval 1.baseline R:0.36591 P:0.25112 F:0.29784
+baseline ROUGE-2 Eval 2.baseline R:0.52941 P:0.40748 F:0.46051
+baseline ROUGE-2 Eval 3.baseline R:0.30263 P:0.26136 F:0.28049
+baseline ROUGE-2 Eval 4.baseline R:0.70518 P:0.61888 F:0.65922
+baseline ROUGE-2 Eval 5.baseline R:0.60443 P:0.36312 F:0.45368
+baseline ROUGE-2 Eval 6.baseline R:0.70506 P:0.69722 F:0.70112
+baseline ROUGE-2 Eval 7.baseline R:0.48701 P:0.54745 F:0.51546
+baseline ROUGE-2 Eval 8.baseline R:0.46099 P:0.46429 F:0.46263
+baseline ROUGE-2 Eval 9.baseline R:0.46757 P:0.44588 F:0.45647
+baseline ROUGE-2 Eval 10.baseline R:0.41100 P:0.28995 F:0.34002
+baseline ROUGE-2 Eval 11.baseline R:0.55457 P:0.44976 F:0.49670
+baseline ROUGE-2 Eval 12.baseline R:0.23419 P:0.18819 F:0.20869
+baseline ROUGE-2 Eval 13.baseline R:0.41486 P:0.36813 F:0.39010
+baseline ROUGE-2 Eval 14.baseline R:0.27444 P:0.23701 F:0.25436
+baseline ROUGE-2 Eval 15.baseline R:0.60458 P:0.37910 F:0.46600
+baseline ROUGE-2 Eval 16.baseline R:0.33220 P:0.30061 F:0.31562
+baseline ROUGE-2 Eval 17.baseline R:0.33068 P:0.29856 F:0.31380
+baseline ROUGE-2 Eval 18.baseline R:0.34263 P:0.32576 F:0.33398
+baseline ROUGE-2 Eval 19.baseline R:0.31176 P:0.30114 F:0.30636
+baseline ROUGE-2 Eval 20.baseline R:0.57530 P:0.47512 F:0.52043
+---------------------------------------------
+textrank ROUGE-1 Average_R: 0.48489 (95%-conf.int. 0.44962 - 0.52194)
+textrank ROUGE-1 Average_P: 0.55992 (95%-conf.int. 0.52107 - 0.60140)
+textrank ROUGE-1 Average_F: 0.51856 (95%-conf.int. 0.48415 - 0.55617)
+.............................................
+textrank ROUGE-1 Eval 1.textrank R:0.43006 P:0.54500 F:0.48076
+textrank ROUGE-1 Eval 2.textrank R:0.47328 P:0.55357 F:0.51029
+textrank ROUGE-1 Eval 3.textrank R:0.59804 P:0.57547 F:0.58654
+textrank ROUGE-1 Eval 4.textrank R:0.50198 P:0.62871 F:0.55824
+textrank ROUGE-1 Eval 5.textrank R:0.67296 P:0.71812 F:0.69481
+textrank ROUGE-1 Eval 6.textrank R:0.58659 P:0.70946 F:0.64220
+textrank ROUGE-1 Eval 7.textrank R:0.42581 P:0.54098 F:0.47654
+textrank ROUGE-1 Eval 8.textrank R:0.45775 P:0.56522 F:0.50584
+textrank ROUGE-1 Eval 9.textrank R:0.36290 P:0.39244 F:0.37709
+textrank ROUGE-1 Eval 10.textrank R:0.54341 P:0.63060 F:0.58377
+textrank ROUGE-1 Eval 11.textrank R:0.36657 P:0.52521 F:0.43178
+textrank ROUGE-1 Eval 12.textrank R:0.43803 P:0.47426 F:0.45543
+textrank ROUGE-1 Eval 13.textrank R:0.57846 P:0.69118 F:0.62982
+textrank ROUGE-1 Eval 14.textrank R:0.56716 P:0.55072 F:0.55882
+textrank ROUGE-1 Eval 15.textrank R:0.44481 P:0.56612 F:0.49819
+textrank ROUGE-1 Eval 16.textrank R:0.53199 P:0.63710 F:0.57982
+textrank ROUGE-1 Eval 17.textrank R:0.40316 P:0.44737 F:0.42412
+textrank ROUGE-1 Eval 18.textrank R:0.34783 P:0.36975 F:0.35846
+textrank ROUGE-1 Eval 19.textrank R:0.52924 P:0.55864 F:0.54354
+textrank ROUGE-1 Eval 20.textrank R:0.45210 P:0.49671 F:0.47336
+---------------------------------------------
+textrank ROUGE-2 Average_R: 0.30780 (95%-conf.int. 0.25784 - 0.35887)
+textrank ROUGE-2 Average_P: 0.35569 (95%-conf.int. 0.29967 - 0.41348)
+textrank ROUGE-2 Average_F: 0.32930 (95%-conf.int. 0.27681 - 0.38213)
+.............................................
+textrank ROUGE-2 Eval 1.textrank R:0.28104 P:0.35652 F:0.31431
+textrank ROUGE-2 Eval 2.textrank R:0.26343 P:0.30838 F:0.28414
+textrank ROUGE-2 Eval 3.textrank R:0.38158 P:0.36709 F:0.37419
+textrank ROUGE-2 Eval 4.textrank R:0.32669 P:0.41000 F:0.36363
+textrank ROUGE-2 Eval 5.textrank R:0.57595 P:0.61486 F:0.59477
+textrank ROUGE-2 Eval 6.textrank R:0.48034 P:0.58163 F:0.52615
+textrank ROUGE-2 Eval 7.textrank R:0.25000 P:0.31818 F:0.28000
+textrank ROUGE-2 Eval 8.textrank R:0.34752 P:0.42982 F:0.38431
+textrank ROUGE-2 Eval 9.textrank R:0.16216 P:0.17544 F:0.16854
+textrank ROUGE-2 Eval 10.textrank R:0.36246 P:0.42105 F:0.38956
+textrank ROUGE-2 Eval 11.textrank R:0.17699 P:0.25424 F:0.20870
+textrank ROUGE-2 Eval 12.textrank R:0.24615 P:0.26667 F:0.25600
+textrank ROUGE-2 Eval 13.textrank R:0.43344 P:0.51852 F:0.47218
+textrank ROUGE-2 Eval 14.textrank R:0.42481 P:0.41241 F:0.41852
+textrank ROUGE-2 Eval 15.textrank R:0.22222 P:0.28333 F:0.24908
+textrank ROUGE-2 Eval 16.textrank R:0.39661 P:0.47561 F:0.43253
+textrank ROUGE-2 Eval 17.textrank R:0.22311 P:0.24779 F:0.23480
+textrank ROUGE-2 Eval 18.textrank R:0.02789 P:0.02966 F:0.02875
+textrank ROUGE-2 Eval 19.textrank R:0.30294 P:0.31988 F:0.31118
+textrank ROUGE-2 Eval 20.textrank R:0.26807 P:0.29470 F:0.28075
+---------------------------------------------
+tfxidf ROUGE-1 Average_R: 0.44744 (95%-conf.int. 0.41402 - 0.48263)
+tfxidf ROUGE-1 Average_P: 0.50195 (95%-conf.int. 0.46030 - 0.54719)
+tfxidf ROUGE-1 Average_F: 0.47141 (95%-conf.int. 0.43659 - 0.50695)
+.............................................
+tfxidf ROUGE-1 Eval 1.tfxidf R:0.48901 P:0.51598 F:0.50213
+tfxidf ROUGE-1 Eval 2.tfxidf R:0.47074 P:0.50272 F:0.48620
+tfxidf ROUGE-1 Eval 3.tfxidf R:0.42810 P:0.51575 F:0.46786
+tfxidf ROUGE-1 Eval 4.tfxidf R:0.35573 P:0.36885 F:0.36217
+tfxidf ROUGE-1 Eval 5.tfxidf R:0.53774 P:0.67857 F:0.60000
+tfxidf ROUGE-1 Eval 6.tfxidf R:0.53911 P:0.63487 F:0.58308
+tfxidf ROUGE-1 Eval 7.tfxidf R:0.55161 P:0.59790 F:0.57382
+tfxidf ROUGE-1 Eval 8.tfxidf R:0.31338 P:0.38696 F:0.34630
+tfxidf ROUGE-1 Eval 9.tfxidf R:0.52151 P:0.60248 F:0.55908
+tfxidf ROUGE-1 Eval 10.tfxidf R:0.45338 P:0.54651 F:0.49561
+tfxidf ROUGE-1 Eval 11.tfxidf R:0.44575 P:0.51351 F:0.47724
+tfxidf ROUGE-1 Eval 12.tfxidf R:0.37521 P:0.46042 F:0.41347
+tfxidf ROUGE-1 Eval 13.tfxidf R:0.50769 P:0.68750 F:0.58407
+tfxidf ROUGE-1 Eval 14.tfxidf R:0.32463 P:0.35950 F:0.34118
+tfxidf ROUGE-1 Eval 15.tfxidf R:0.36688 P:0.39789 F:0.38176
+tfxidf ROUGE-1 Eval 16.tfxidf R:0.40404 P:0.41379 F:0.40886
+tfxidf ROUGE-1 Eval 17.tfxidf R:0.30830 P:0.33333 F:0.32033
+tfxidf ROUGE-1 Eval 18.tfxidf R:0.59289 P:0.44118 F:0.50591
+tfxidf ROUGE-1 Eval 19.tfxidf R:0.43275 P:0.44848 F:0.44047
+tfxidf ROUGE-1 Eval 20.tfxidf R:0.50299 P:0.59574 F:0.54545
+---------------------------------------------
+tfxidf ROUGE-2 Average_R: 0.26116 (95%-conf.int. 0.22069 - 0.30496)
+tfxidf ROUGE-2 Average_P: 0.29432 (95%-conf.int. 0.24544 - 0.34628)
+tfxidf ROUGE-2 Average_F: 0.27556 (95%-conf.int. 0.23227 - 0.32250)
+.............................................
+tfxidf ROUGE-2 Eval 1.tfxidf R:0.31325 P:0.33060 F:0.32169
+tfxidf ROUGE-2 Eval 2.tfxidf R:0.25320 P:0.27049 F:0.26156
+tfxidf ROUGE-2 Eval 3.tfxidf R:0.25000 P:0.30159 F:0.27338
+tfxidf ROUGE-2 Eval 4.tfxidf R:0.09562 P:0.09917 F:0.09736
+tfxidf ROUGE-2 Eval 5.tfxidf R:0.35127 P:0.44400 F:0.39223
+tfxidf ROUGE-2 Eval 6.tfxidf R:0.39888 P:0.47020 F:0.43161
+tfxidf ROUGE-2 Eval 7.tfxidf R:0.38636 P:0.41901 F:0.40202
+tfxidf ROUGE-2 Eval 8.tfxidf R:0.20213 P:0.25000 F:0.22353
+tfxidf ROUGE-2 Eval 9.tfxidf R:0.34324 P:0.39687 F:0.36811
+tfxidf ROUGE-2 Eval 10.tfxidf R:0.22006 P:0.26563 F:0.24071
+tfxidf ROUGE-2 Eval 11.tfxidf R:0.25369 P:0.29252 F:0.27172
+tfxidf ROUGE-2 Eval 12.tfxidf R:0.21709 P:0.26681 F:0.23940
+tfxidf ROUGE-2 Eval 13.tfxidf R:0.38700 P:0.52521 F:0.44563
+tfxidf ROUGE-2 Eval 14.tfxidf R:0.15038 P:0.16667 F:0.15811
+tfxidf ROUGE-2 Eval 15.tfxidf R:0.14706 P:0.15957 F:0.15306
+tfxidf ROUGE-2 Eval 16.tfxidf R:0.20000 P:0.20486 F:0.20240
+tfxidf ROUGE-2 Eval 17.tfxidf R:0.09163 P:0.09914 F:0.09524
+tfxidf ROUGE-2 Eval 18.tfxidf R:0.42629 P:0.31657 F:0.36333
+tfxidf ROUGE-2 Eval 19.tfxidf R:0.17353 P:0.17988 F:0.17665
+tfxidf ROUGE-2 Eval 20.tfxidf R:0.34940 P:0.41429 F:0.37909
+---------------------------------------------
+tfxidf_stemmed ROUGE-1 Average_R: 0.45554 (95%-conf.int. 0.40803 - 0.49872)
+tfxidf_stemmed ROUGE-1 Average_P: 0.49036 (95%-conf.int. 0.44030 - 0.53652)
+tfxidf_stemmed ROUGE-1 Average_F: 0.47156 (95%-conf.int. 0.42239 - 0.51384)
+.............................................
+tfxidf_stemmed ROUGE-1 Eval 1.tfxidf_stemmed R:0.43493 P:0.50779 F:0.46854
+tfxidf_stemmed ROUGE-1 Eval 2.tfxidf_stemmed R:0.53690 P:0.54663 F:0.54172
+tfxidf_stemmed ROUGE-1 Eval 3.tfxidf_stemmed R:0.45098 P:0.51880 F:0.48252
+tfxidf_stemmed ROUGE-1 Eval 4.tfxidf_stemmed R:0.35573 P:0.33333 F:0.34417
+tfxidf_stemmed ROUGE-1 Eval 5.tfxidf_stemmed R:0.49686 P:0.57246 F:0.53199
+tfxidf_stemmed ROUGE-1 Eval 6.tfxidf_stemmed R:0.53352 P:0.52762 F:0.53055
+tfxidf_stemmed ROUGE-1 Eval 7.tfxidf_stemmed R:0.33871 P:0.37500 F:0.35593
+tfxidf_stemmed ROUGE-1 Eval 8.tfxidf_stemmed R:0.18662 P:0.21200 F:0.19850
+tfxidf_stemmed ROUGE-1 Eval 9.tfxidf_stemmed R:0.39516 P:0.46519 F:0.42732
+tfxidf_stemmed ROUGE-1 Eval 10.tfxidf_stemmed R:0.54019 P:0.58333 F:0.56093
+tfxidf_stemmed ROUGE-1 Eval 11.tfxidf_stemmed R:0.38710 P:0.45205 F:0.41706
+tfxidf_stemmed ROUGE-1 Eval 12.tfxidf_stemmed R:0.39559 P:0.40172 F:0.39863
+tfxidf_stemmed ROUGE-1 Eval 13.tfxidf_stemmed R:0.49538 P:0.55517 F:0.52357
+tfxidf_stemmed ROUGE-1 Eval 14.tfxidf_stemmed R:0.40672 P:0.45798 F:0.43083
+tfxidf_stemmed ROUGE-1 Eval 15.tfxidf_stemmed R:0.63636 P:0.74242 F:0.68531
+tfxidf_stemmed ROUGE-1 Eval 16.tfxidf_stemmed R:0.56566 P:0.53165 F:0.54813
+tfxidf_stemmed ROUGE-1 Eval 17.tfxidf_stemmed R:0.61660 P:0.61905 F:0.61782
+tfxidf_stemmed ROUGE-1 Eval 18.tfxidf_stemmed R:0.37549 P:0.32986 F:0.35120
+tfxidf_stemmed ROUGE-1 Eval 19.tfxidf_stemmed R:0.48538 P:0.53205 F:0.50764
+tfxidf_stemmed ROUGE-1 Eval 20.tfxidf_stemmed R:0.47305 P:0.51299 F:0.49221
+---------------------------------------------
+tfxidf_stemmed ROUGE-2 Average_R: 0.25679 (95%-conf.int. 0.20251 - 0.31196)
+tfxidf_stemmed ROUGE-2 Average_P: 0.27657 (95%-conf.int. 0.21957 - 0.33256)
+tfxidf_stemmed ROUGE-2 Average_F: 0.26592 (95%-conf.int. 0.21098 - 0.32063)
+.............................................
+tfxidf_stemmed ROUGE-2 Eval 1.tfxidf_stemmed R:0.24792 P:0.28964 F:0.26716
+tfxidf_stemmed ROUGE-2 Eval 2.tfxidf_stemmed R:0.31714 P:0.32292 F:0.32000
+tfxidf_stemmed ROUGE-2 Eval 3.tfxidf_stemmed R:0.20395 P:0.23485 F:0.21831
+tfxidf_stemmed ROUGE-2 Eval 4.tfxidf_stemmed R:0.10359 P:0.09701 F:0.10019
+tfxidf_stemmed ROUGE-2 Eval 5.tfxidf_stemmed R:0.28165 P:0.32482 F:0.30170
+tfxidf_stemmed ROUGE-2 Eval 6.tfxidf_stemmed R:0.37921 P:0.37500 F:0.37709
+tfxidf_stemmed ROUGE-2 Eval 7.tfxidf_stemmed R:0.08117 P:0.08993 F:0.08533
+tfxidf_stemmed ROUGE-2 Eval 8.tfxidf_stemmed R:0.08156 P:0.09274 F:0.08679
+tfxidf_stemmed ROUGE-2 Eval 9.tfxidf_stemmed R:0.21622 P:0.25478 F:0.23392
+tfxidf_stemmed ROUGE-2 Eval 10.tfxidf_stemmed R:0.33010 P:0.35664 F:0.34286
+tfxidf_stemmed ROUGE-2 Eval 11.tfxidf_stemmed R:0.14159 P:0.16552 F:0.15262
+tfxidf_stemmed ROUGE-2 Eval 12.tfxidf_stemmed R:0.17949 P:0.18229 F:0.18088
+tfxidf_stemmed ROUGE-2 Eval 13.tfxidf_stemmed R:0.30960 P:0.34722 F:0.32733
+tfxidf_stemmed ROUGE-2 Eval 14.tfxidf_stemmed R:0.19549 P:0.22034 F:0.20717
+tfxidf_stemmed ROUGE-2 Eval 15.tfxidf_stemmed R:0.47712 P:0.55725 F:0.51408
+tfxidf_stemmed ROUGE-2 Eval 16.tfxidf_stemmed R:0.43051 P:0.40446 F:0.41708
+tfxidf_stemmed ROUGE-2 Eval 17.tfxidf_stemmed R:0.50199 P:0.50400 F:0.50299
+tfxidf_stemmed ROUGE-2 Eval 18.tfxidf_stemmed R:0.09163 P:0.08042 F:0.08566
+tfxidf_stemmed ROUGE-2 Eval 19.tfxidf_stemmed R:0.26765 P:0.29355 F:0.28000
+tfxidf_stemmed ROUGE-2 Eval 20.tfxidf_stemmed R:0.29518 P:0.32026 F:0.30721

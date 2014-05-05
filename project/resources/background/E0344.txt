@@ -1,0 +1,3 @@
+FERÐAMÁLARÁÐ Íslands hefur opnað nýja útgáfu af vefnum www.ferdamalarad.is. Á vefnum er að finna fjölþættar upplýsingar um íslenska ferðaþjónustu. 
+Vefurinn á að nýtast aðilum innan greinarinnar og öllum sem þurfa að leita sér upplýsinga um efni tengt ferðaþjónustunni, svo sem fjölmiðlum, skólafólki og fleirum. 
+Með nýja vefnum verður handhægara að auka miðlun upplýsinga frá Ferðamálaráði og greininni í heild og tækifæri skapast til frekari þróunar vefjarins. Meðal nýrra þátta má nefna viðburðadagatal um það sem er á döfinni í íslenskri ferðaþjónustu og spjallsvæði. Hönnun og forritun nýja vefjarins var unnin í samvinnu við upplýsingatæknifyrirtækin Betri lausnir og Hugvit í Reykjavík og er vefumsjónarkerfið Vefþór notað við daglega umsýslu.

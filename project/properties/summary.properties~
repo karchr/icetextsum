@@ -1,0 +1,10 @@
+file=
+out_file=
+language=icelandic
+algorithm=textrank
+stemmed=false
+min_number_words=100
+min_percent_of_full=20
+
+#.system for prepare4rouge
+summary_file_type=.system

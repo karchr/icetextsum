@@ -1,0 +1,17 @@
+---------------------------------------------
+baseline ROUGE-1 Average_R: 0.53600 (95%-conf.int. 0.53600 - 0.53600)
+baseline ROUGE-1 Average_P: 0.49265 (95%-conf.int. 0.49265 - 0.49265)
+baseline ROUGE-1 Average_F: 0.51341 (95%-conf.int. 0.51341 - 0.51341)
+
+textrank ROUGE-1 Average_R: 0.55200 (95%-conf.int. 0.55200 - 0.55200)
+textrank ROUGE-1 Average_P: 0.57500 (95%-conf.int. 0.57500 - 0.57500)
+textrank ROUGE-1 Average_F: 0.56327 (95%-conf.int. 0.56327 - 0.56327)
+
+tfxidf ROUGE-1 Average_R: 0.41600 (95%-conf.int. 0.41600 - 0.41600)
+tfxidf ROUGE-1 Average_P: 0.40000 (95%-conf.int. 0.40000 - 0.40000)
+tfxidf ROUGE-1 Average_F: 0.40784 (95%-conf.int. 0.40784 - 0.40784)
+
+tfxidf_2 ROUGE-1 Average_R: 0.54400 (95%-conf.int. 0.54400 - 0.54400)
+tfxidf_2 ROUGE-1 Average_P: 0.53968 (95%-conf.int. 0.53968 - 0.53968)
+tfxidf_2 ROUGE-1 Average_F: 0.54183 (95%-conf.int. 0.54183 - 0.54183)
+

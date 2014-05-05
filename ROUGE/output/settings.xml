@@ -1,0 +1,422 @@
+<ROUGE_EVAL version="1.5.5">
+<EVAL ID="1">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf_stemmed">textsummary16.tfxidf_stemmed.system.html</P>
+<P ID="baseline">textsummary16.baseline.system.html</P>
+<P ID="llr">textsummary16.llr.system.html</P>
+<P ID="textrank">textsummary16.textrank.system.html</P>
+<P ID="tfxidf">textsummary16.tfxidf.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary16.2.gold.html</M>
+<M ID="2">textsummary16.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="2">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf">textsummary5.tfxidf.system.html</P>
+<P ID="baseline">textsummary5.baseline.system.html</P>
+<P ID="textrank">textsummary5.textrank.system.html</P>
+<P ID="tfxidf_stemmed">textsummary5.tfxidf_stemmed.system.html</P>
+<P ID="llr">textsummary5.llr.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary5.2.gold.html</M>
+<M ID="2">textsummary5.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="3">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf">textsummary7.tfxidf.system.html</P>
+<P ID="baseline">textsummary7.baseline.system.html</P>
+<P ID="llr">textsummary7.llr.system.html</P>
+<P ID="textrank">textsummary7.textrank.system.html</P>
+<P ID="tfxidf_stemmed">textsummary7.tfxidf_stemmed.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary7.2.gold.html</M>
+<M ID="2">textsummary7.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="4">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="textrank">textsummary13.textrank.system.html</P>
+<P ID="llr">textsummary13.llr.system.html</P>
+<P ID="tfxidf_stemmed">textsummary13.tfxidf_stemmed.system.html</P>
+<P ID="baseline">textsummary13.baseline.system.html</P>
+<P ID="tfxidf">textsummary13.tfxidf.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary13.1.gold.html</M>
+<M ID="2">textsummary13.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="5">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">textsummary11.baseline.system.html</P>
+<P ID="tfxidf">textsummary11.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary11.tfxidf_stemmed.system.html</P>
+<P ID="llr">textsummary11.llr.system.html</P>
+<P ID="textrank">textsummary11.textrank.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary11.1.gold.html</M>
+<M ID="2">textsummary11.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="6">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf_stemmed">textsummary14.tfxidf_stemmed.system.html</P>
+<P ID="baseline">textsummary14.baseline.system.html</P>
+<P ID="textrank">textsummary14.textrank.system.html</P>
+<P ID="llr">textsummary14.llr.system.html</P>
+<P ID="tfxidf">textsummary14.tfxidf.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary14.1.gold.html</M>
+<M ID="2">textsummary14.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="7">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="llr">textsummary8.llr.system.html</P>
+<P ID="tfxidf_stemmed">textsummary8.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary8.textrank.system.html</P>
+<P ID="tfxidf">textsummary8.tfxidf.system.html</P>
+<P ID="baseline">textsummary8.baseline.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary8.1.gold.html</M>
+<M ID="2">textsummary8.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="8">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="llr">textsummary2.llr.system.html</P>
+<P ID="textrank">textsummary2.textrank.system.html~</P>
+<P ID="llr">textsummary20.llr.system.html</P>
+<P ID="baseline">textsummary20.baseline.system.html</P>
+<P ID="tfxidf_stemmed">textsummary2.tfxidf_stemmed.system.html</P>
+<P ID="tfxidf">textsummary20.tfxidf.system.html</P>
+<P ID="tfxidf">textsummary2.tfxidf.system.html</P>
+<P ID="textrank">textsummary2.textrank.system.html</P>
+<P ID="textrank">textsummary20.textrank.system.html</P>
+<P ID="baseline">textsummary2.baseline.system.html</P>
+<P ID="tfxidf_stemmed">textsummary20.tfxidf_stemmed.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary20.1.gold.html</M>
+<M ID="2">textsummary2.1.gold.html</M>
+<M ID="3">textsummary2.2.gold.html</M>
+<M ID="4">textsummary20.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="9">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="textrank">textsummary13.textrank.system.html</P>
+<P ID="tfxidf_stemmed">textsummary1.tfxidf_stemmed.system.html</P>
+<P ID="tfxidf_stemmed">textsummary15.tfxidf_stemmed.system.html</P>
+<P ID="tfxidf_stemmed">textsummary14.tfxidf_stemmed.system.html</P>
+<P ID="llr">textsummary10.llr.system.html</P>
+<P ID="llr">textsummary13.llr.system.html</P>
+<P ID="tfxidf_stemmed">textsummary13.tfxidf_stemmed.system.html</P>
+<P ID="tfxidf_stemmed">textsummary17.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary12.textrank.system.html</P>
+<P ID="llr">textsummary1.llr.system.html</P>
+<P ID="baseline">textsummary18.baseline.system.html</P>
+<P ID="llr">textsummary12.llr.system.html</P>
+<P ID="textrank">textsummary1.textrank.system.html</P>
+<P ID="llr">textsummary18.llr.system.html</P>
+<P ID="tfxidf">textsummary15.tfxidf.system.html</P>
+<P ID="tfxidf">textsummary19.tfxidf.system.html</P>
+<P ID="baseline">textsummary1.baseline.system.html</P>
+<P ID="tfxidf_stemmed">textsummary18.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary1.textrank.system.html~</P>
+<P ID="tfxidf">textsummary12.tfxidf.system.html</P>
+<P ID="tfxidf">textsummary10.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary16.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary18.textrank.system.html</P>
+<P ID="textrank">textsummary17.textrank.system.html</P>
+<P ID="baseline">textsummary13.baseline.system.html</P>
+<P ID="baseline">textsummary16.baseline.system.html</P>
+<P ID="baseline">textsummary11.baseline.system.html</P>
+<P ID="llr">textsummary16.llr.system.html</P>
+<P ID="llr">textsummary15.llr.system.html</P>
+<P ID="tfxidf">textsummary18.tfxidf.system.html</P>
+<P ID="baseline">textsummary14.baseline.system.html</P>
+<P ID="tfxidf">textsummary11.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary11.tfxidf_stemmed.system.html</P>
+<P ID="tfxidf_stemmed">textsummary19.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary15.textrank.system.html</P>
+<P ID="llr">textsummary17.llr.system.html</P>
+<P ID="tfxidf">textsummary17.tfxidf.system.html</P>
+<P ID="baseline">textsummary19.baseline.system.html</P>
+<P ID="tfxidf">textsummary13.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary10.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary10.textrank.system.html</P>
+<P ID="baseline">textsummary10.baseline.system.html</P>
+<P ID="baseline">textsummary17.baseline.system.html</P>
+<P ID="textrank">textsummary19.textrank.system.html</P>
+<P ID="llr">textsummary11.llr.system.html</P>
+<P ID="textrank">textsummary16.textrank.system.html</P>
+<P ID="tfxidf">textsummary16.tfxidf.system.html</P>
+<P ID="textrank">textsummary11.textrank.system.html</P>
+<P ID="tfxidf_stemmed">textsummary12.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary14.textrank.system.html</P>
+<P ID="llr">textsummary14.llr.system.html</P>
+<P ID="tfxidf">textsummary14.tfxidf.system.html</P>
+<P ID="baseline">textsummary12.baseline.system.html</P>
+<P ID="baseline">textsummary15.baseline.system.html</P>
+<P ID="llr">textsummary19.llr.system.html</P>
+<P ID="tfxidf">textsummary1.tfxidf.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary18.2.gold.html</M>
+<M ID="2">textsummary12.1.gold.html</M>
+<M ID="3">textsummary12.2.gold.html</M>
+<M ID="4">textsummary16.2.gold.html</M>
+<M ID="5">textsummary15.1.gold.html</M>
+<M ID="6">textsummary1.2.gold.html</M>
+<M ID="7">textsummary11.1.gold.html</M>
+<M ID="8">textsummary13.1.gold.html</M>
+<M ID="9">textsummary1.1.gold.html</M>
+<M ID="10">textsummary11.2.gold.html</M>
+<M ID="11">textsummary18.1.gold.html</M>
+<M ID="12">textsummary14.1.gold.html</M>
+<M ID="13">textsummary13.2.gold.html</M>
+<M ID="14">textsummary17.1.gold.html</M>
+<M ID="15">textsummary19.2.gold.html</M>
+<M ID="16">textsummary10.1.gold.html</M>
+<M ID="17">textsummary19.1.gold.html</M>
+<M ID="18">textsummary17.2.gold.html</M>
+<M ID="19">textsummary14.2.gold.html</M>
+<M ID="20">textsummary10.2.gold.html</M>
+<M ID="21">textsummary15.2.gold.html</M>
+<M ID="22">textsummary16.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="10">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf_stemmed">textsummary4.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary4.textrank.system.html</P>
+<P ID="tfxidf">textsummary4.tfxidf.system.html</P>
+<P ID="baseline">textsummary4.baseline.system.html</P>
+<P ID="llr">textsummary4.llr.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary4.1.gold.html</M>
+<M ID="2">textsummary4.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="11">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">textsummary18.baseline.system.html</P>
+<P ID="llr">textsummary18.llr.system.html</P>
+<P ID="tfxidf_stemmed">textsummary18.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary18.textrank.system.html</P>
+<P ID="tfxidf">textsummary18.tfxidf.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary18.2.gold.html</M>
+<M ID="2">textsummary18.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="12">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf">textsummary6.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary6.tfxidf_stemmed.system.html</P>
+<P ID="llr">textsummary6.llr.system.html</P>
+<P ID="textrank">textsummary6.textrank.system.html</P>
+<P ID="baseline">textsummary6.baseline.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary6.2.gold.html</M>
+<M ID="2">textsummary6.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="13">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf_stemmed">textsummary9.tfxidf_stemmed.system.html</P>
+<P ID="baseline">textsummary9.baseline.system.html</P>
+<P ID="tfxidf">textsummary9.tfxidf.system.html</P>
+<P ID="llr">textsummary9.llr.system.html</P>
+<P ID="textrank">textsummary9.textrank.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary9.2.gold.html</M>
+<M ID="2">textsummary9.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="14">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf_stemmed">textsummary15.tfxidf_stemmed.system.html</P>
+<P ID="tfxidf">textsummary15.tfxidf.system.html</P>
+<P ID="llr">textsummary15.llr.system.html</P>
+<P ID="textrank">textsummary15.textrank.system.html</P>
+<P ID="baseline">textsummary15.baseline.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary15.1.gold.html</M>
+<M ID="2">textsummary15.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="15">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="llr">textsummary10.llr.system.html</P>
+<P ID="tfxidf">textsummary10.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary10.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary10.textrank.system.html</P>
+<P ID="baseline">textsummary10.baseline.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary10.1.gold.html</M>
+<M ID="2">textsummary10.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="16">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="llr">textsummary20.llr.system.html</P>
+<P ID="baseline">textsummary20.baseline.system.html</P>
+<P ID="tfxidf">textsummary20.tfxidf.system.html</P>
+<P ID="textrank">textsummary20.textrank.system.html</P>
+<P ID="tfxidf_stemmed">textsummary20.tfxidf_stemmed.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary20.1.gold.html</M>
+<M ID="2">textsummary20.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="17">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="textrank">textsummary12.textrank.system.html</P>
+<P ID="llr">textsummary12.llr.system.html</P>
+<P ID="tfxidf">textsummary12.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary12.tfxidf_stemmed.system.html</P>
+<P ID="baseline">textsummary12.baseline.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary12.1.gold.html</M>
+<M ID="2">textsummary12.2.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="18">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf">textsummary19.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary19.tfxidf_stemmed.system.html</P>
+<P ID="baseline">textsummary19.baseline.system.html</P>
+<P ID="textrank">textsummary19.textrank.system.html</P>
+<P ID="llr">textsummary19.llr.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary19.2.gold.html</M>
+<M ID="2">textsummary19.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="19">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="llr">textsummary3.llr.system.html</P>
+<P ID="textrank">textsummary3.textrank.system.html</P>
+<P ID="tfxidf">textsummary3.tfxidf.system.html</P>
+<P ID="tfxidf_stemmed">textsummary3.tfxidf_stemmed.system.html</P>
+<P ID="baseline">textsummary3.baseline.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary3.2.gold.html</M>
+<M ID="2">textsummary3.1.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="20">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
+<P ID="tfxidf_stemmed">textsummary17.tfxidf_stemmed.system.html</P>
+<P ID="textrank">textsummary17.textrank.system.html</P>
+<P ID="llr">textsummary17.llr.system.html</P>
+<P ID="tfxidf">textsummary17.tfxidf.system.html</P>
+<P ID="baseline">textsummary17.baseline.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">textsummary17.1.gold.html</M>
+<M ID="2">textsummary17.2.gold.html</M>
+</MODELS>
+	</EVAL>
+
+</ROUGE_EVAL>

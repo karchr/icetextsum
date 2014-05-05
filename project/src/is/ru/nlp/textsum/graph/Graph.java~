@@ -1,0 +1,363 @@
+/*
+Copyright (c) 2009, ShareThis, Inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+ * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+
+ * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+
+ * Neither the name of the ShareThis, Inc., nor the names of its
+      contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+package is.ru.nlp.textsum.graph;
+
+/**
+ * 
+
+
+/*
+ 
+ 1. Identify text units that best define the task at hand,
+	and add them as vertices in the graph.
+	
+ 2. Identify relations that connect such text units, and
+	use these relations to draw edges between vertices
+	in the graph. Edges can be directed or undirected,
+	weighted or unweighted.
+	
+ 3. Iterate the graph-based ranking algorithm until convergence.
+ 
+ 4. Sort vertices based on their final score. Use the values
+	attached to each vertex for ranking/selection decisions.
+ 
+ The in and out degrees are used to calculate the weight of the edges of the graph.
+ 
+ 
+ */
+
+	
+	/*
+	Copyright (c) 2009, ShareThis, Inc. All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are
+	met:
+
+	 * Redistributions of source code must retain the above copyright
+	      notice, this list of conditions and the following disclaimer.
+
+	 * Redistributions in binary form must reproduce the above
+	      copyright notice, this list of conditions and the following
+	      disclaimer in the documentation and/or other materials provided
+	      with the distribution.
+
+	 * Neither the name of the ShareThis, Inc., nor the names of its
+	      contributors may be used to endorse or promote products derived
+	      from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+	A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+	OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+	SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+	LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+	DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+	THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+	OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	 */
+
+import is.ru.nlp.textsum.NLPUtil.Language;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.TreeMap;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.commons.math.stat.descriptive.SummaryStatistics;
+
+/**
+ * An abstraction for handling the graph as a data object.
+ *
+ * @author paco@sharethis.com
+ */
+
+public class Graph extends TreeMap<String, Node> {
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 8714110966639130973L;
+
+		private final static Log LOG = LogFactory.getLog(Graph.class.getName());
+
+		/**
+		 * Public definitions.
+		 */
+		public final static double INCLUSIVE_COEFF = 0.25D;
+		public final static double KEYWORD_REDUCTION_FACTOR = 0.8D;
+		public final static double TEXTRANK_DAMPING_FACTOR = 0.85D;
+		public final static double STANDARD_ERROR_THRESHOLD = 0.005D;
+
+		/**
+		 * Public members.
+		 */
+		public SummaryStatistics distStats = new SummaryStatistics();
+
+		/**
+		 * Protected members.
+		 */
+		protected Node[] nodeList = null;
+
+		/**
+		 * Run through N iterations of the TreeRank algorithm, or until the standard
+		 * error converges below a given threshold.
+		 */
+		public void runTextRank() {
+			final int maxIterations = this.size();
+			nodeList = new Node[this.size()];
+			
+			int j = 0;
+			
+			// load the node list
+			for (Node n1 : this.values()) {
+				nodeList[j++] = n1;
+			}
+
+			// iterate, then sort and mark the top results
+			iterateGraph(maxIterations);
+			
+		}
+
+		/**
+		 * Iterate through the graph, calculating rank.
+		 */
+		protected void iterateGraph(final int max_iterations) {
+			final double[] rankList = new double[nodeList.length];
+
+			// either run through N iterations, or until the standard
+			// error converges below a threshold
+			for (int k = 0; k < max_iterations; k++) {
+				distStats.clear();
+
+				// calculate the next rank for each node
+				for (int i = 0; i < nodeList.length; i++) {
+					final Node n1 = nodeList[i];
+					double rank = 0.0D;
+
+					for (Node n2 : n1.edges) {
+						rank += n2.rank / (double) n2.edges.size();
+					}
+
+					rank *= TEXTRANK_DAMPING_FACTOR;
+					rank += 1.0D - TEXTRANK_DAMPING_FACTOR;
+					
+					rankList[i] = rank;
+					distStats.addValue(Math.abs(n1.rank - rank));
+					//System.out.println("node : " + n1.key + " rank : " + Math.abs((n1.rank - rank)));
+				}
+
+				final double standard_error = distStats.getStandardDeviation() / Math.sqrt((double) distStats.getN());
+		
+				// swap in new rank values
+				for (int i = 0; i < nodeList.length; i++) {
+					nodeList[i].rank = rankList[i];
+				}
+
+				if (standard_error < STANDARD_ERROR_THRESHOLD) {
+					break;
+				}
+			}
+		}
+
+		/**
+		 * Sort results to identify potential keywords.
+		 */
+		public void sortResults(final long max_results) {
+			Arrays.sort(nodeList, new Comparator<Node>() {
+				public int compare(Node n1, Node n2) {
+					if (n1.rank > n2.rank) {
+						return -1;
+					} else if (n1.rank < n2.rank) {
+						return 1;
+					} else {
+						return 0;
+					}
+				}
+			});
+
+			// mark the top-ranked nodes
+			distStats.clear();
+
+			for (int i = 0; i < nodeList.length; i++) {
+				final Node n1 = nodeList[i];
+
+				if (i <= max_results) {
+					n1.marked = true;
+					distStats.addValue(n1.rank);
+				}
+
+				if (LOG.isDebugEnabled()) {
+					LOG.debug("n: " + n1.key + " " + n1.rank + " " + n1.marked);
+
+					for (Node n2 : n1.edges) {
+						LOG.debug(" - " + n2.key);
+					}
+				}
+			}
+		}
+
+		/**
+		 * Calculate a threshold for the ranked results.
+		 */
+		public double getRankThreshold() {
+			return distStats.getMean()	+ (distStats.getStandardDeviation() * INCLUSIVE_COEFF);
+		}
+		
+		public void runTextRankOnSentences(Language language) {
+			final int max_iterations = this.size();
+			nodeList = new Node[this.size()];
+			
+			int j = 0;
+			
+			// load the node list
+			for (Node n1 : this.values()) {
+				nodeList[j++] = n1;
+			}
+
+			// iterate, then sort and mark the top results
+			weigthingScore(max_iterations, language);
+		}
+		
+	
+		/**
+		 * Calculates the rank weighting scores for all the nodes in the graph.
+		 * Iterative calculates over the graph until convergence at the standard 
+		 * error threshold or until max iterations.
+		 * 
+		 * @param maxIterations		Max number of iterations allowed for calculating rank scores
+		 * @param language			Language of the text to calculate rank weighting scores for
+		 * 							Available languages: Icelandic and English
+		 */
+		public void weigthingScore(int maxIterations, Language language) {
+			
+			LinkedList<Node> nodes = new LinkedList<Node> ();
+			
+			//Add nodes to LinkedList, we need them to stay in order
+			for(int i = 0; i < nodeList.length; i++){
+				nodes.add(nodeList[i]);
+			}
+			
+			/*
+			 
+			 WS(Vi) = ( 1 - d) + d * Sum(VjIn)  ________Wij________ * WS(Vj)
+			 									  Sum(Vk outVj) Wjk
+			 
+			 */
+		for (int k = 0; k < maxIterations; k++) {
+			  distStats.clear();
+			  
+			  //Use dynamic programming to calculate the scores
+              double previousWSScore[] = new double[nodes.size()];
+              
+              //Read in scores already calculated for nodes
+              for (Node s : nodeList) {
+            	  previousWSScore[nodes.indexOf(s)] = s.rank;
+              }
+              
+              //For all nodes in the graph
+              for (Node sentence_i : nodes) {       
+                      double resultSumVji = 0;
+                      
+                      //For all in-coming edges of Vi
+                      for (Node sentence_j : sentence_i.edgesIN) {
+                    	  
+                    	  	  //Do not compare a sentence to it self, we do not allow self voting here	
+                              if (!sentence_j.value.text.equalsIgnoreCase(sentence_i.value.text) ) {
+                            	  
+                            	  //Calculate the sum of all similarity measurements
+                            	  //from all Vj nodes with outgoing edges to Vk nodes, see Wjk in equation
+                                  double sumWjk = getSumWjk(sentence_j, language);
+                                  
+                                  if (sumWjk != 0) {
+                                      double Wji =  0.0;
+                                      if(language.equals(Language.ICELANDIC) ){
+                                    	  //Calculate Wij, similarity between two sentences
+                                          Wji = sentence_i.similarity(sentence_j);
+                                          
+                                      }else if ( language.equals(Language.ENGLISH) ){
+                                    	  //Calculate Wij, similarity between two sentences
+                                    	  Wji = sentence_i.similarityEN(sentence_j);
+                                      }
+                                      //Get the score for the previous node
+                                      double WSVj = previousWSScore[nodes.indexOf(sentence_j)];
+                                      
+                                      //Sum all (j in Vj)
+                                      resultSumVji +=  (( Wji / sumWjk ) * WSVj);
+                                  }
+                              }
+                      }
+	              //Calculate weighting score WS(Vi)
+	              double WSVi = (1.0 - TEXTRANK_DAMPING_FACTOR) + TEXTRANK_DAMPING_FACTOR * resultSumVji;
+	              distStats.addValue(Math.abs(sentence_i.rank - WSVi));
+	              sentence_i.rank = WSVi;                   
+              }
+              //Calculate the Standard Error of the Mean
+              final double standard_error = distStats.getStandardDeviation() / Math.sqrt((double) distStats.getN());
+              
+              //if std error of the mean is less than threshold
+              //the graph has converged and we break
+	          if (standard_error < STANDARD_ERROR_THRESHOLD) {
+				  break;
+			  }
+		 }
+      }
+		
+	  /**
+	   * Calculate the similarity between a sentence Vj and all the sentences Vk
+	   * where Vj has an outgoing edge to Vk.
+	   * 
+	   * @param sentence_j	Current sentence node Vj.
+	   * @param language	Language the text to be compared
+	   * @return 			sum of all the similarity calculations between sentence Vj
+	   *        			and all other sentences Vk, Vj has outgoing edges to.
+	   */
+      private double getSumWjk(Node sentence_j, Language language) { 
+              double sumWjk = 0;
+
+              if(language.equals(Language.ICELANDIC) ){
+                  for (Node sentence_k : sentence_j.edgesOUT) {
+                		  sumWjk += sentence_j.similarity(sentence_k);
+                  }
+                  
+              }else if ( language.equals(Language.ENGLISH) ){
+                  for (Node sentence_k : sentence_j.edgesOUT) {
+                      sumWjk += sentence_j.similarityEN(sentence_k);
+                  }
+              }
+              return sumWjk;
+      }
+}
