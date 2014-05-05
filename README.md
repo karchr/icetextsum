@@ -1,6 +1,6 @@
 A summarizer for summarizing Icelandic texts. The summarizer runs in cmd
 line mode or GUI mode. This summarizer is a prototype implementation as 
-part of a masters thesis titled "Text Summarization of Icelandic Texts"
+part of a masters thesis titled "Summarization of Icelandic Texts"
 written at Reykjavík University 2014. 
 
 The summarizer uses two methods for summarization, namely TextRank by 
@@ -47,11 +47,5 @@ input params: -t, -f, -o, -l, -a, -z, -w, -p, -h, -gui
 ##################################################################
 
 NOTE: To run the Summarizer for English texts, the summarizer.jar and
-the folders /resources/en/opennlp/EnglishChunk.bin.gz
-				 /EnglishSD.bin.gz
-				 /EnglishTok.bin.gz
-				 /tag.bin.gz
-				 /tagdict
-
-must be in the same directory.
+the folders /resources/en/opennlp/ must be in the same directory.
 
